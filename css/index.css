@@ -1,0 +1,850 @@
+@import url(common.css);
+
+
+
+#top_btn {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 10000;
+    color: #e0b3b3;
+}
+
+#top_btn span {
+    font-size: 60px;
+}
+
+
+#top_btn a.top {
+    width: 500px;
+    height: 500px;
+    transition: all 0.3s;
+}
+
+#top_btn a.top:hover {
+    color: #9f7ca3;
+}
+
+
+
+h2 {
+    margin-top: 50px;
+}
+
+
+
+/* 헤더 */
+header {
+    width: 100%;
+}
+
+header .left_logo {
+    text-align: center;
+}
+
+.menu {
+    width: 100%;
+    height: 50px;
+    background: #6E6673;
+    text-align: center;
+}
+
+
+.menu ul {
+    display: inline-block;
+}
+
+.menu ul li {
+    padding: 15px 50px;
+    color: #D9ABA7;
+    position: relative;
+    float: left;
+    width: 150px;
+}
+
+.menu ul li a {
+    font-family: 'Dosis', sans-serif;
+}
+
+.menu ul li:hover a {
+    color: #F2E9BD;
+    cursor: pointer;
+}
+
+.menu li span {
+    width: 0;
+    border-bottom: 2px solid #6E6673;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%);
+    transition: all 0.4s;
+    position: absolute;
+}
+
+.menu li:hover span {
+    width: 160px;
+    border-bottom: 1px solid #F2E9BD;
+    opacity: 1;
+}
+
+/* 비쥬얼 */
+
+@keyframes visual {
+    0% {
+        left: 10px;
+    }
+
+    50% {
+        left: 300px;
+        background: url(../image/main.png) no-repeat;
+    }
+
+    100% {
+        left: 1000px;
+    }
+}
+
+#visual {
+    width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+    background: url(../image/main2.png) no-repeat;
+    animation: visual 15s infinite alternate;
+    cursor: pointer;
+    margin-top: 10px;
+    background-size: 100%;
+}
+
+
+/* section1 */
+#SHOP1 {
+    text-align: center;
+    width: 1200px;
+    margin: 0 auto;
+
+
+
+}
+
+#SHOP1 ul {
+    display: inline-block;
+
+}
+
+#SHOP1 ul h3 {
+    text-align: center;
+    font-size: 30px;
+    padding: 5px;
+    margin: 50px;
+    color: #41414C;
+    font-family: 'Dosis', sans-serif;
+    border-top: 1px solid;
+}
+
+#SHOP1 ul li {
+    float: left;
+    width: 200px;
+    height: 500px;
+    /* margin-left: 50px; */
+    margin: 50px;
+    text-align: center;
+}
+
+
+
+
+#SHOP1 ul li img {
+    transition: all 0.5s;
+    position: relative;
+    width: 200px;
+    margin: 0 auto;
+
+}
+
+#SHOP1 ul li:hover img {
+    margin-right: 30px;
+    opacity: 1;
+    transform: rotateX(20deg) translate3d(20px, 30px, 20px);
+}
+
+#SHOP1 ul li p {font-size: 10px;}
+
+
+#SHOP1 ul li .text1 {
+    font-size: 10px;
+    font-family: 'Dosis', sans-serif;
+
+
+}
+
+#SHOP1 ul li .text2 {
+    padding-bottom: 10px;
+    font-size: 15px;
+}
+
+#SHOP1 ul li .text3 {
+    border: 2px solid #EBDCE0;
+    border-radius: 20px;
+    width: 70px;
+    height: 20px;
+    margin: 0 auto;
+    line-height: 20px;
+    background: #EBDCE0;
+    transition: all 0.5s;
+    font-family: 'Dosis', sans-serif;
+    box-shadow: 3px 3px 3px #6E6673;
+
+}
+
+#SHOP1 ul li:hover .text3 {
+    cursor: pointer;
+    background: #9f7ca3;
+    border: #9f7ca3;
+    color: white;
+}
+
+
+
+/* section2 */
+#show>p {
+    color: #999;
+    margin-bottom: 50px;
+
+}
+
+#show {
+    text-align: center;
+    margin: 100px;
+    padding: 100px;
+    margin: 0 auto;
+    color: white;
+    margin-top: 150px;
+    font-family: 'Dosis', sans-serif;
+    background: #EBDCE0;
+}
+
+#show .toto {
+    display: inline-block;
+}
+
+#show .toto li {
+    position: relative;
+    float: left;
+    width: 300px;
+    height: 200px;
+    cursor: pointer;
+    margin: 0 50px 0px 0;
+}
+
+
+#show .toto li div {
+    position: absolute;
+}
+
+#show .toto li p {
+    font-size: 13px;
+}
+
+#show .toto li .b1 { /* 가운데 박스효과 */
+
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.5);
+    align-items: center;
+    transition: all 0.8s;
+    opacity: 0;
+}
+
+#show .toto li:hover .b1 {
+    width: 100%;
+    opacity: 1;
+}
+
+#show .toto li .b2 {
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background: rgba(138, 136, 255, 0.5);
+    align-items: center;
+    transition: all 0.8s;
+    opacity: 0;
+}
+
+#show .toto li:hover .b2 {
+    width: 100%;
+    opacity: 1;
+}
+
+#show .toto li .b3 {
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background: rgba(255, 179, 149, 0.5);
+    align-items: center;
+    transition: all 0.8s;
+    opacity: 0;
+}
+
+#show .toto li:hover .b3 {
+    width: 100%;
+    opacity: 1;
+}
+
+#show .toto li .b4 {
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background: rgba(255, 184, 202, 0.5);
+    align-items: center;
+    transition: all 0.8s;
+    opacity: 0;
+}
+
+#show .toto li:hover .b4 {
+    width: 100%;
+    opacity: 1;
+}
+
+#show .toto li p {
+    margin: 0 auto;
+}
+
+#show .toto li img {
+    width: 100%;
+    height: 100%;
+}
+
+#show .toto li .a1 {    /*show on 박스*/
+    margin-top: 30px;
+    border: 1px solid #6E6673;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #6E6673;
+}
+
+#show .toto li:hover .a1 {
+    background-color: #301a33;
+    cursor: pointer;
+    color: white;
+}
+
+
+/* section3 */
+.hover4 {
+    width: 980px;
+    height: 320px;
+    margin: 0 auto;
+    position: relative;
+    font-family: 'Dosis', sans-serif;
+    padding: 150px;
+}
+
+.hover4 ul {
+    position: absolute;
+    z-index: 1000;
+
+}
+
+
+.hover4 ul li {
+    width: 310px;
+    height: 320px;
+    float: left;
+    overflow: hidden;
+    margin-right: 15px;
+    background: #fff;
+    transition: all 0.3s;
+}
+
+.hover4 ul li:hover {
+    height: 450px;
+}
+
+/*마우스 오버하기 전 처음 보이는 텍스트*/
+.hover4 ul li .all_title {
+    padding: 10px;
+    text-align: center;
+
+}
+
+.hover4 ul li .text {
+    color: gray;
+    transition: all 0.5s;
+    opacity: 0;
+
+
+}
+
+.hover4 ul li:hover .text {
+    color: gray;
+    transition: all 0.5s;
+    opacity: 1;
+    color: white;
+
+
+
+}
+
+.hover4 ul li:hover .all_title {
+    background-color: #6E6673;
+
+
+}
+
+.hover4 img {
+    width: 500px;
+    height: 200px;
+    padding: 20px;
+}
+
+.hover4 li:hover img {
+    background: url(../image/bang.png);
+}
+
+
+.hover4 ul li .all_view {
+    /*오버시에 보이는 텍스트와 버튼*/
+
+    padding: 20px;
+    opacity: 0;
+    transition: all 0.8s;
+    background-color: #EBDCE0;
+
+}
+
+.hover4 ul li:hover .all_view {
+    opacity: 1;
+}
+
+.hover4 ul li .tet12 {
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    padding-bottom: 10px;
+
+}
+
+
+.hover4 ul li .greenbtn a {
+    /*자세히보기 버튼*/
+    display: block;
+    width: 100px;
+    background: #6E6673;
+    text-align: center;
+    color: #fff;
+    margin-top: 15px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+
+.hover4 ul li .greenbtn a:hover {
+    color: #301a33;
+    background-color: #D9ABA7;
+
+}
+
+
+/* section4 */
+#pro {
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+    margin-top: 80px;
+    font-family: 'Noto Serif', serif;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #9f7ca3;
+    box-shadow: 5px 5px 5px gray;
+    background: url(../image/loth.png)no-repeat right;
+    font-family: 'Dosis', sans-serif;
+}
+
+#pro ul {
+    display: inline-block;
+}
+
+#pro ul li {
+
+    font-family: 'Dosis', sans-serif;
+}
+
+#pro ul li img {
+    margin: 0px auto;
+    cursor: pointer;
+    transition: all 0.5s;
+    float: left;
+}
+
+#pro ul li:hover img {
+    transform: rotate(350deg);
+}
+
+#pro ul li .st {
+    margin: 100px;
+}
+
+#pro ul li h3 {
+    font-size: 20px;
+    color: #9f7ca3;
+
+}
+
+#pro ul li h4 {
+    font-size: 15px;
+    line-height: 30px;
+    opacity: 0;
+    color: #6E6673;
+}
+
+#pro ul li:hover h4 {
+    font-size: 15px;
+    line-height: 30px;
+    opacity: 1;
+
+}
+
+#pro ul li h5 {
+    font-size: 50px;
+    color: #301a33;
+    transition: all 0.5s;
+
+}
+
+#pro ul li:hover h5 {
+    transform: rotate(360deg);
+    color: #F2D5BB;
+
+
+}
+
+
+
+#pro ul li h3 {}
+
+
+#pro ul li h4 {}
+
+/* section5*/
+
+.spring {
+    margin: 0 auto;
+    height: 500px;
+    background: url(../image/abc.jpg) no-repeat center center;
+    background-size: cover;
+    margin-top: 300px;
+    font-family: 'Dosis', sans-serif;
+    width:100%;
+
+
+}
+
+.spring .spt h1 {
+    font-size: 70px;
+
+}
+
+.spring .spt p {
+    font-size: 30px;
+}
+
+.spring .spt:hover {
+    padding: 100px;
+    font-weight: 600;
+    line-height: 30px;
+    font-size: 50px;
+    opacity: 1;
+    color: white;
+    transition: all 2s;
+}
+
+.spring .spt {
+    text-align: center;
+    padding: 120px;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 80px;
+    opacity: 0;
+    color: #fff;
+}
+
+.spring .spt p {
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+
+
+.spring .spt a {
+    border: 1px solid #41414C;
+    border-radius: 10px 10px 10px 10px;
+    width: 200px;
+    height: 200px;
+    font-size: 30px;
+    background-color: #301a33;
+}
+
+.spring .spt a:hover {
+
+    background-color: #41414C;
+
+}
+
+
+
+
+
+
+
+/* section6 */
+
+#stores {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    width: 100%;
+    height: 500px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 250px;
+}
+
+#stores.stt {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #6E6673;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+#stores input[type="text"] {
+    border: 1px solid gray 50px;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    padding: 5px;
+    margin: 20px;
+    width: 500px;
+}
+
+#stores .stores2 {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+#stores .stores2 li {
+    overflow: hidden;
+    width: 1200px;
+}
+
+#stores .stores2 li img {
+    transition: all 0.5s;
+
+}
+
+#stores .stores2 li:hover img {
+    transform: scale(1.4);
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    cursor: pointer;
+}
+
+#stores .stores2 ul li .all_title {
+    position: absolute;
+    width: 1200px;
+    bottom: 45%;
+}
+
+#stores .stores2 ul li .na {
+    font-size: 80px;
+    color: white;
+
+
+
+
+}
+
+#stores .stores2 ul li :hover .na {
+    color: #6E6673;
+    opacity: 1;
+    cursor: pointer;
+}
+
+#stores .stores2 ul li .btn {
+    display: block;
+    width: 100px;
+    background: #301a33;
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+#stores .stores2 ul li:hover .btn {
+    background-color: #e0b3b3;
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* Footer */
+footer {
+    width: 100%;
+    height: 200px;
+    background: #41414C;
+    color: #fff;
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+
+/* 애니메이션  */
+.box1 {
+    left: 100px;
+    top: 100px;
+    --size: 2.5;
+    margin: 100px auto;
+
+
+}
+
+.box1::before {
+    content: '❤';
+    position: absolute;
+    display: inline-block;
+    left: 100px;
+    top: 100px;
+    bottom: 100px;
+    color: pink;
+    font-size: 30px;
+    line-height: 10;
+    animation: heartbeat 2s infinite alternate;
+
+
+}
+
+@keyframes heartbeat {
+    to {
+        transform: scale(var(--size));
+        opacity: 0;
+    }
+}
+
+
+
+
+.box2 {
+    left: 100px;
+    top: 100px;
+    --size: 2.5;
+    margin: 100px auto;
+
+}
+
+.box2::before {
+    content: '❤';
+    position: absolute;
+    display: inline-block;
+    left: 150px;
+    top: 100px;
+    bottom: 100px;
+    color: pink;
+    font-size: 60px;
+    line-height: 10;
+    animation: heartbeat 2s infinite alternate;
+
+
+}
+
+@keyframes heartbeat {
+    to {
+        transform: scale(var(--size));
+        opacity: 0;
+    }
+}
+
+
+
+
+
+
+
+.box3 {
+    left: 100px;
+    top: 100px;
+    --size: 2.5;
+    margin: 100px auto;
+
+}
+
+.box3::before {
+    content: '❤';
+    position: absolute;
+    display: inline-block;
+    right: 100px;
+    top: 100px;
+    bottom: 100px;
+    color: pink;
+    font-size: 30px;
+    line-height: 10;
+    animation: heartbeat 2s infinite alternate;
+
+
+}
+
+@keyframes heartbeat {
+    to {
+        transform: scale(var(--size));
+        opacity: 0;
+    }
+}
+
+
+
+
+.box4 {
+    left: 100px;
+    top: 100px;
+    --size: 2.5;
+    margin: 100px auto;
+
+}
+
+.box4::before {
+    content: '❤';
+    position: absolute;
+    display: inline-block;
+    right: 150px;
+    top: 100px;
+    bottom: 100px;
+    color: pink;
+    font-size: 60px;
+    line-height: 10;
+    animation: heartbeat 2s infinite alternate;
+
+
+}
+
+@keyframes heartbeat {
+    to {
+        transform: scale(var(--size));
+        opacity: 0;
+    }
+}
